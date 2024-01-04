@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>vōcc</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400;1,9..40,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		#h-ctr h1 {
+			font-family: 'DM Serif Display', serif;
+			font-weight: 400;
+			font-size: 7em;
+			margin: 0;
+			line-height: 1;
+			margin-right: 0.1em;
+		}
+
+		body {
+			font-family: 'DM Sans', sans-serif;
+			background: #000;
+			color: #fff;
+			margin: 0;
+			font-size: clamp(1rem, 1.5vw, 1.5rem);
+		}
+
+		#h-ctr p {
+			font-weight: 400;
+			margin: 0;
+			line-height: 1;
+		}
+
+		a {
+			/* color: #fff; */
+			text-decoration: none;
+		}
+
+		#bg {
+			background: url('./takashi-miyazaki-64ajtpEzlYc-unsplash.jpg') no-repeat center center/cover;
+			/* position: fixed; */
+			/* top: 10vw;
+			left: 30vw;
+			bottom: 10vw;
+			right: 10vw;
+			z-index: -1; */
+			flex: 1;
+			width: 100%;
+			height: 100%;
+		}
+
+		#ctr {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			gap: 2em;
+			padding: 2em;
+		}
+
+		#h-ctr {
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			align-items: baseline;
+			gap: 0.5em;
+			width: 100%;
+		}
+
+		@media screen and (max-width: 600px) {
+			#h-ctr {
+				flex-direction: column;
+			}
+		}
+
+		#caption a {
+			font-size: 0.5em;
+			font-family: 'DM Sans', sans-serif;
+			font-weight: 400;
+			color: rgba(255, 255, 255, 0.5);
+			text-align: right;
+			display: block;
+			margin-top: 1em;
+			margin-right: 1em;
+			/* z-index: 0; */
+		}
+	</style>
+</head>
+
+<body>
+	<div id="ctr">
+		<div id="h-ctr">
+
+			<h1>vōcc</h1>
+			<p>home of kimeiga</p>
+		</div>
+		<div id="bg"><small id="caption"><a href="https://unsplash.com/photos/aerial-view-of-city-buildings-during-night-time-64ajtpEzlYc">Photo by Takashi Miyazaki</a></small></div>
+	</div>
+</body>
+
+</html>
